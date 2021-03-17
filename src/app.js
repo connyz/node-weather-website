@@ -6,6 +6,7 @@ const forecast = require("./utils/forecast");
 const userInput = process.argv[2];
 
 const app = express();
+
 // Needed for Heroku
 const port = process.env.PORT || 3000;
 
