@@ -26,14 +26,14 @@ app.use(express.static(publicDirectoryPath))
 app.get("", (req, res) => {
     res.render("index", {
         title: "Weather",
-        name: "Eli Pjale"
+        name: "Conny Martinsson"
     });
 });
 
 app.get("/about", (req, res) => {
     res.render("about", {
         title: "About me",
-        name: "Eli Pjale"
+        name: "Conny Martinsson"
     });
 });
 
@@ -41,7 +41,7 @@ app.get("/help", (req, res) => {
     res.render("help", {
         message: "This is a help message",
         title: "Help",
-        name: "Eli Pjale"
+        name: "Conny Martinsson"
     });
 });
 
@@ -75,7 +75,7 @@ app.get("/help/*", function(req, res){
     res.render("404", {
         title: "Error 404",
         message: "Help article not found.",
-        name: "Eli Pjale"
+        name: "Conny Martinsson"
     });
 });
 
@@ -84,7 +84,7 @@ app.get("*", function(req, res){
     res.render("404", {
         title: "Error 404",
         message: "Page not found.",
-        name: "Eli Pjale"
+        name: "Conny Martinsson"
     });
 });
 
