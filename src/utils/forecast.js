@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         }else if(body.error){
             callback("Unable to find weather. Try another search", undefined)
         }else{
-            callback(undefined, `Description: ${body.current.weather_descriptions[0]}, Temp: ${body.current.temperature}, Feelslike: ${body.current.feelslike}, Humidity: ${body.current.humidity}%`);
+            callback(undefined, `Current weather: ${body.current.weather_descriptions[0]}, Temp: ${body.current.temperature}, Feelslike: ${body.current.feelslike}, Humidity: ${body.current.humidity}%`);
         };
     });
 };
